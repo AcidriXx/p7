@@ -1,18 +1,17 @@
-import Main from "../components/MainHome/Main";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import Mainlogement from "../components/Mainlogement/MainLogement.jsx";
 
 
-
-const Home = () => {
+const Logement = () => {
     return (
-      <div className="Home">
+      <div className="Logement">
         <Header />
-        <Main />
+        <Mainlogement/>
         <Footer />
       </div>
     );
   }
   
-  export default Home;
+  export default Logement;
   

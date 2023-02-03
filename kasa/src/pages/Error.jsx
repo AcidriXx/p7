@@ -1,18 +1,16 @@
-import Main from "../components/MainHome/Main";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import Mainerror from "../components/MainError/Mainerror";
 
-
-
-const Home = () => {
+const Error= () => {
     return (
-      <div className="Home">
+      <div className="Error">
         <Header />
-        <Main />
+        <Mainerror />
         <Footer />
       </div>
     );
   }
   
-  export default Home;
+  export default Error;
   

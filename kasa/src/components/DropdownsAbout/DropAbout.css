@@ -1,0 +1,95 @@
+.collapseButtonAbout {
+    color: white;
+    background-color: #ff6060;
+    width: 90%;
+    height: 52px;
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    border: none;
+}
+
+.collapseButtonAbout p{
+    font-size: 20px;
+    padding-left: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.collapseButtonAbout img{
+    padding-right: 3%;
+    transition: 300ms;
+    padding-left: 2%;
+    
+}
+
+.collapseContentAbout{
+    width: 90%;
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 0px;
+    margin-top: -20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    
+}
+
+.collapseTextAbout{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 24px;
+    color: #ff6060;
+}
+
+.collapseAbout{
+    display: grid;
+    margin-bottom: 3%;
+    width: 100%;
+    justify-items: center;
+    
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.down {
+    display: block;
+    animation: growDown 300ms ease-in-out;
+    transform-origin: top center;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    25%{
+        transform: scaleY(0.25)
+    }
+    50% {
+        transform: scaleY(0.5)
+    }
+    75%{
+        transform: scaleY(0.75)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+@media (max-width: 425px) {
+    .collapseButtonAbout {
+        width: 100%;
+        height: 40px;
+    }
+    .collapseContentAbout {
+        width: 100%;
+    }
+}

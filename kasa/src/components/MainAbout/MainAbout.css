@@ -1,0 +1,44 @@
+
+.mainAbout{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.homeAbout{
+    width: 100%;
+    height: 223px;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.imgAbout{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.backHomeAbout{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: #000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    top: -227px;
+}
+
+.collapseAboutAll{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 425px) {
+    .homeAbout{
+        margin-bottom: 5%;
+    }
+}

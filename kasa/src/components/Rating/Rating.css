@@ -1,0 +1,21 @@
+.allStarRate{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.rateStar {
+    padding-left: 15px;
+    height: 30px;
+}
+
+@media (max-width: 425px) {
+    .allStarRate{
+        height: 20px;
+    }
+    .rateStar {
+        padding-left: 5px;
+        height: 20px;
+    }
+}

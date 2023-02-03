@@ -1,0 +1,145 @@
+.main{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.home{
+    width: 100%;
+    height: 223px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+.backHome{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: #000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    top: -195px;
+}
+
+.txtHome{
+    font-size: 55px;
+    position: relative;
+    margin-top: -155px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    font-weight: 500;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+
+.imgHome{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    
+}
+
+.Gallery{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.card{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    margin-top: 56px;
+}
+
+.imgLogement{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.txtLogement{
+    margin-top: -65px;
+    padding-right: 30px;
+    z-index: 1;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+    height: 25px;
+    
+    
+}
+.linkLogement{
+    text-decoration: none;
+}
+
+.backlogement{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -321px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+
+@media (max-width: 425px) {
+
+    .card{
+        width: 100%;
+        height: 255px;
+        padding-bottom: 20px;
+        margin-top: 0%;
+    }
+
+    .backlogement{
+        top: -237px;
+    }
+
+    .txtHome{
+        width: 220px;
+        padding-left: 6%;
+        text-align: initial;
+        margin-top: -87px;
+        font-size: 24px;
+    }
+
+    .backHome{
+        top: -110px;
+        border-radius: 10px;
+    }
+
+    .home{
+        height: 111px;
+        border-radius: 10px;
+    }
+    
+    .imgHome{
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 768px) {
+
+    .txtHome{
+        font-size: 24px;
+        margin-top: -125px;
+    }
+
+    .backHome{
+        top: -153px;
+    }
+}
