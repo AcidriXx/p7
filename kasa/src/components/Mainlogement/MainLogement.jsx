@@ -9,6 +9,8 @@ import Mainerror from "../MainError/Mainerror";
 
 const Mainlogement = () => {
     const { id } = useParams()
+
+
     
      for (const element of products) {
         const exists = products.find(element => element.id === id);

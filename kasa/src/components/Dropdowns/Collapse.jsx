@@ -6,6 +6,8 @@ const Collapse = ({ title, content }) => {
     e.preventDefault();
     const divText = e.target.nextSibling;
     const arrow = e.target.lastChild;
+    console.log(arrow);
+    console.log(arrow.classList);
 
     if (!divText.classList.contains("show")){
         divText.classList.add("show");

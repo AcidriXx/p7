@@ -1,10 +1,26 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import products from '../../Product.json';
 import imgHome from '../images/imgHome.png'
 import '../MainHome/Main.css'
 
 
 const Main = () => {
+
+    const [product, setProduct] = useState([])
+
+    useEffect(() => {
+
+        fetch('http://localhost:8080/api/Product')
+        .then(res => {
+            return res.json()
+        })
+
+        .then(data => {
+            setProduct(data)
+        })
+    }, [])
+        console.log(setProduct);
+
     return (
        <div className="main">
             <div className="home">
@@ -14,12 +30,12 @@ const Main = () => {
             </div>
             <div className="Gallery">
             {
-                products.map( product => {
+                product.map( item => {
                     return(
-                        <div className="card" key={product.id}>
-                            <Link to={`/Logement/${product.id}`} className="linkLogement" >
-                                <img src={ product.cover } alt="" className="imgLogement" />
-                                <p className="txtLogement" >{ product.title }</p>
+                        <div className="card" key={item.id}>
+                            <Link to={`/Logement/${item.id}`} className="linkLogement" >
+                                <img src={ item.cover } alt="" className="imgLogement" />
+                                <p className="txtLogement" >{ item.title }</p>
                                 <div className="backlogement"></div>
                             </Link>
                         </div>
