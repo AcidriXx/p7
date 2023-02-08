@@ -19,7 +19,6 @@ const Main = () => {
             setProduct(data)
         })
     }, [])
-        console.log(setProduct);
 
     return (
        <div className="main">

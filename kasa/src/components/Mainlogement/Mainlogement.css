@@ -79,14 +79,29 @@
     margin-top: 20px;
     justify-content: space-between;
 }
+.dropDownEquipments{
+    width: 47%;
+    display: flex;
+    justify-content: flex-end;
+}
+.dropDownDescription{
+    width: 47%;
+}
 
 @media (max-width: 768px) {
     .dropDown{
         display: grid;
         justify-content: unset;
+        margin-bottom: 20px;
     }
     .titleLocationTags h1 {
         margin-top: -10px;
+    }
+    .dropDownEquipments{
+        width: 100%;
+    }
+    .dropDownDescription{
+        width: 100%;
     }
 }
 
@@ -132,9 +147,7 @@
         height: 60px;
         border-radius: 30px;
     }
-    .dropDown{
-        margin-bottom: 50px;
-    }
+    
 
 }
 
@@ -144,3 +157,7 @@
     }
 
 }
+
+
+
+

@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     height: 415px;
-    right: 73px;
+    right: 5%;
     top: 151px;
 }
 
@@ -88,5 +88,16 @@
     }
     .iconPrev{
         height: 40px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .sliderNext {
+        
+        right: 5%;
+        top: 185px;
+    }
+    .sliderPrev {
+        top: 187px;
     }
 }

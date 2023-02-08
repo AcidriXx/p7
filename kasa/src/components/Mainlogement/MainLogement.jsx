@@ -1,16 +1,28 @@
-import products from '../../Product.json';
 import '../Mainlogement/Mainlogement.css'
 import { useParams } from "react-router-dom";
 import Rating from '../Rating/Rating';
 import Collapse from '../Dropdowns/Collapse'
 import Slider from '../Slider/slider';
 import Mainerror from "../MainError/Mainerror";
+import { useState, useEffect } from "react";
 
 
 const Mainlogement = () => {
     const { id } = useParams()
 
-
+    const [products, setProducts] = useState([])
+    
+        useEffect(() => {
+    
+            fetch('http://localhost:8080/api/Product')
+            .then(res => {
+                return res.json()
+            })
+    
+            .then(data => {
+                setProducts(data)
+            })
+        }, [])
     
      for (const element of products) {
         const exists = products.find(element => element.id === id);
@@ -49,8 +61,8 @@ const Mainlogement = () => {
                             </div>
                         </div>
                         <div className='dropDown'>
-                            <Collapse title="Description"  content={element.description}/>
-                            <Collapse title="Équipments"  content={element.equipments}/>
+                            <div className='dropDownDescription'><Collapse title="Description"  content={element.description}/></div>
+                            <div className='dropDownEquipments'><Collapse title="Équipments"  content={element.equipments}/></div>
                         </div>
                     </div>
                 </div>

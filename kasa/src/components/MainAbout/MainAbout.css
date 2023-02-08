@@ -31,8 +31,9 @@
 }
 
 .collapseAboutAll{
+    display: grid;
     width: 100%;
-    height: 100%;
+    justify-items: center;
 }
 
 
@@ -42,3 +43,4 @@
         margin-bottom: 5%;
     }
 }
+
